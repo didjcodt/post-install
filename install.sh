@@ -16,8 +16,8 @@ then
 	exit 1
 fi
 
-echo "[+] Installing aptitude, ctags, tmux, tty-clock and vim"
-apt-get install aptitude ctags tmux tty-clock vim
+echo "[+] Installing default softwares"
+apt-get install aptitude ctags htop tmux tty-clock vim
 
 echo "[+] Downloading vimrc files"
 git clone https://github.com/didjcodt/vimrc.git ~/.vim_runtime
