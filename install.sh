@@ -70,6 +70,14 @@ then
 	cp .tmux.conf ~/
 fi
 
+# Install the i3 conf if i3 window manager is installed
+if [ -f /usr/bin/i3 ];
+then
+	echo "[+] Adding .i3/config"
+	cp ~/.i3/config ~/.i3/config.bak
+	cp i3.conf ~/.i3/config
+fi
+
 # Add public key in id_rsa.pub if file exists
 if [ -f id_rsa.pub ];
 then
