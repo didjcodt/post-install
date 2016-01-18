@@ -33,6 +33,7 @@ else # If it's a root user, we can apt-get
 		$(($(tput lines) * 2 / 3 - 5)) \
 		aptitude "better than default apt-get" on \
 		ctags "needed for custom vimrc" on \
+		docker.io "Platform for distributed applications" on \
 		htop "top with graphing support" on \
 		i3-wm "i3 tiling window manager" on \
 		tmux "screen-like terminal multiplexer" on  \
@@ -40,7 +41,6 @@ else # If it's a root user, we can apt-get
 		vim "the best text editor ever" on 2>choices 
 
 	TOINSTALL=()
-
 	while read choice
 	do
 		TOINSTALL+=($choice)
